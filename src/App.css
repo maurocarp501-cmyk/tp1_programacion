@@ -70,12 +70,15 @@ body {
 
 .Listado {
   display: flex;
-  flex-direction: column;
-  gap: 10px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 12px;
   flex: 1;
+  align-content: flex-start;
 }
 
 .Listado h1 {
+  width: 100%;
   font-size: 16px;
   font-weight: 500;
   color: #555;
@@ -88,9 +91,9 @@ body {
   border-radius: 8px;
   padding: 1rem;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
+  flex-direction: column;
+  gap: 10px;
+  width: 220px;
 }
 
 .tarjeta-info {
@@ -107,6 +110,14 @@ body {
 .Tarjeta h3 {
   font-size: 13px;
   color: #888;
+}
+
+.tarjeta-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #eee;
+  padding-top: 8px;
 }
 
 .Tarjeta select {

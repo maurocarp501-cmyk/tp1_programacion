@@ -8,7 +8,11 @@ export default function App(){
 
 
 
-  
+  const tareasDefault = [
+  {id: 1, nombre: "Estudiar React", prioridad: "alta", categoria: "Estudio", estado: "pendiente"},
+  {id: 2, nombre: "Hacer ejercicio", prioridad: "baja", categoria: "Personal", estado: "en proceso"},
+  {id: 3, nombre: "Hacer la tarea", prioridad: "media", categoria: "Trabajo", estado: "pendiente"},
+]
 
 const [tareas, setTareas] = useState(tareasDefault);
 
